@@ -1,4 +1,5 @@
 /* Prevent images from blowing up the layout */
+body { background: #fffbeb !important; }
 img { max-width: 100%; height: auto; display: block; }
 
 :root{
