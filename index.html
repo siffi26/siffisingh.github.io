@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Siffi Singh | Applied Scientist II (AWS AI)</title>
+  <meta name="description" content="Siffi Singh — Applied Scientist II (Amazon Transcribe / AWS AI). Automatic Speech Translation, PII Redaction, Trend Detection, Semantic Matching, KGQA." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="top">
+        <div>
+          <h1>Siffi Singh</h1>
+          <p class="subtitle">Applied Scientist II · Amazon Transcribe — AWS AI</p>
+        </div>
+        <div class="cta">
+          <a class="btn" href="#contact">Contact</a>
+          <a class="btn btn-primary" href="resume/Siffi_Singh_CV.pdf" download>Download CV</a>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#focus">Focus</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
+        <a href="#links">Work Links</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          I build production ML systems for conversational AI and multilingual speech analytics—covering
+          end-to-end speech translation, privacy-preserving PII redaction, semantic search over conversations,
+          and generative AI pipelines for theme/trend detection.
+        </p>
+
+        <div class="cards grid-2">
+          <div class="card">
+            <h3>Core strengths</h3>
+            <ul>
+              <li>Multilingual NLP / Speech (ASR, MT, AST)</li>
+              <li>LLM-assisted pipelines and evaluation</li>
+              <li>Privacy & compliance (PII redaction)</li>
+              <li>Semantic retrieval & clustering</li>
+              <li>Productionization: metrics, thresholds, scaling</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Tools</h3>
+            <p class="muted">Python · PyTorch · TensorFlow · Transformers · XLM-R · Embeddings · Evaluation & Metrics</p>
+            <p class="muted">(+ ML systems, data pipelines, experimentation)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="focus" class="section alt">
+      <div class="container">
+        <h2>Recent focus areas</h2>
+        <div class="timeline">
+          <div class="titem">
+            <div class="tmeta">Automatic Speech Translation</div>
+            <h3>Real-time end-to-end speech translation (low latency, high quality)</h3>
+            <ul>
+              <li>Designed RL-based training using Group Relative Policy Optimization (GRPO).</li>
+              <li>Optimized latency–accuracy tradeoff with contextual signals.</li>
+              <li>Planned multilingual expansion to 10+ languages (PFIGS, CJK + Cantonese, Taiwanese) with bidirectional support.</li>
+            </ul>
+            <p class="impact"><strong>Impact:</strong> Enables natural real-time cross-language communication in multilingual call centers, healthcare, and emergency services.</p>
+          </div>
+
+          <div class="titem">
+            <div class="tmeta">PII Redaction</div>
+            <h3>Multilingual PII redaction for conversation analytics</h3>
+            <ul>
+              <li>Generated synthetic training datasets with LLMs across 14 languages.</li>
+              <li>Expanded language + locale support (incl. 6 English locale variants).</li>
+              <li>Retrained XLM-R on expanded multilingual data; improved code-switching detection.</li>
+              <li>Language-optimized tokenization: sentence-level (EN/EU) and character-level (CJK).</li>
+            </ul>
+            <p class="impact"><strong>Impact:</strong> Protects sensitive data (e.g., bank/credit card) across global customers and strengthens privacy guarantees.</p>
+          </div>
+
+          <div class="titem">
+            <div class="tmeta">Trend / Theme Detection</div>
+            <h3>Generative AI pipeline for automated trend detection in Amazon Connect</h3>
+            <ul>
+              <li>Built end-to-end multi-day, multi-split processing pipeline.</li>
+              <li>Integrated LLMs for issue extraction and theme generation.</li>
+              <li>Defined clustering + generation metrics; tested across finance/retail/hospitality.</li>
+              <li>Expanded multilingual support to French and Spanish; collaborated to deploy to production.</li>
+            </ul>
+            <p class="impact"><strong>Impact:</strong> Helps thousands of customers identify emerging themes and contact drivers at scale.</p>
+          </div>
+
+          <div class="titem">
+            <div class="tmeta">Semantic Matching</div>
+            <h3>Semantic search over thousands of conversations</h3>
+            <ul>
+              <li>Unified production model: all-distilroberta-v1 with token-max pooling.</li>
+              <li>70%+ precision across multiple domains/datasets with calibrated thresholds.</li>
+              <li>Explored pooling strategies and domain-specific improvements to reduce false positives.</li>
+            </ul>
+            <p class="impact"><strong>Impact:</strong> Enables meaning-based search beyond keyword matching for voice + chat analytics.</p>
+          </div>
+
+          <div class="titem">
+            <div class="tmeta">KG + LMs</div>
+            <h3>Hybrid KGQA + LM reasoning to reduce hallucinations</h3>
+            <ul>
+              <li>Integrated ReFinED entity linking (Wikipedia/Wikidata, multilingual).</li>
+              <li>Improved question understanding via filtering and candidate disambiguation.</li>
+              <li>Trained zero-shot question generation in 5 languages using Wikidata templates.</li>
+            </ul>
+            <p class="impact"><strong>Impact:</strong> Fact-grounded answers with large performance gains vs LMs alone on complex reasoning tasks.</p>
+          </div>
+
+          <div class="titem">
+            <div class="tmeta">Research</div>
+            <h3>Material property prediction (tabular ML)</h3>
+            <ul>
+              <li>Built dataset from MatWeb (17,052 metal materials) and automated preprocessing pipeline.</li>
+              <li>BERT-style model adapted for tabular prediction (reported MSE 2.98).</li>
+              <li>Tested GPT/Claude prompting approaches for property prediction.</li>
+            </ul>
+            <p class="impact"><strong>Impact:</strong> Reduces need for costly experiments by predicting missing properties reliably.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="section">
+      <div class="container">
+        <h2>Highlights</h2>
+        <div class="cards grid-3">
+          <div class="card">
+            <h3>Achievements</h3>
+            <ul>
+              <li>Organized a Challenge Track at DSTC 12 (theme detection).</li>
+              <li>Winner: Home Alone Hackathon (1st prize) — QUAC assistant.</li>
+              <li>Winner: Structured Knowledge Hackathon (1st prize) — Discathon workflow.</li>
+              <li>Presented poster at AMLC 2020 (Relation Extraction).</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Mentoring</h3>
+            <ul>
+              <li>Knowledge yield measurement (graph growth metrics)</li>
+              <li>Synthetic QA pair coverage</li>
+              <li>Dialogue summarization faithfulness/coverage (NLI)</li>
+              <li>Intent embedding semantics (negation/implicature)</li>
+              <li>Generalized category discovery (LLM feedback)</li>
+              <li>Memory-augmented multi-agent synthetic data</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Selected topics</h3>
+            <ul>
+              <li>Generative AI evaluation & metrics</li>
+              <li>Clustering + controllable granularity</li>
+              <li>Privacy-first ML for conversation analytics</li>
+              <li>Cross-domain robustness</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section alt">
+      <div class="container">
+        <h2>Publications (selected)</h2>
+        <ul class="pubs">
+          <li>(2025) Shalyminov et al. — Controllable Conversational Theme Detection Track at DSTC 12 (arXiv).</li>
+          <li>(2025) Zou et al. — GLEAN: Generalized category discovery with diverse and quality-enhanced LLM feedback (arXiv).</li>
+          <li>(2024) Zhang et al. — Negation vs implicature challenges with intent encoders (arXiv).</li>
+          <li>(2024) Tang et al. — Topic-focused dialogue summarization hallucination evaluation (arXiv).</li>
+          <li>(2023) Huang et al. — SWING: Balancing coverage and faithfulness for dialogue summarization (arXiv).</li>
+          <li>(2022) Singh et al. — Relation extraction dataset for knowledge extraction from web tables (COLING).</li>
+          <li>(2021) Singh & Hang — Continuous learning for face clustering & recognition (IEEE ICCE) — Best Paper Award.</li>
+          <li>(2015) Singh & Mittal — Internet of everything smart environment (IEEE ICGCIoT).</li>
+        </ul>
+        <p class="muted">Tip: You can replace this list with DOI/ArXiv links later.</p>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="cards grid-2">
+          <div class="card">
+            <h3>M.S. (2017–2019) — Electrical & Computer Science Engineering</h3>
+            <p class="muted">National Chiao Tung University, Taiwan</p>
+            <p>
+              Thesis: <em>Deep Learning Based Face Clustering and Recognition System</em>.
+              Developed a privacy-friendly face clustering system with strong ARI performance in practical scenarios.
+            </p>
+          </div>
+          <div class="card">
+            <h3>B.Tech (2013–2017) — Computer Science & Engineering</h3>
+            <p class="muted">Dr. APJ Abdul Kalam University, Noida, India</p>
+            <p>Ranked 1st for academic year 2013–2017.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="links" class="section alt">
+      <div class="container">
+        <h2>Work Links</h2>
+        <p class="muted">Announcements / “What’s New” pages you can reference publicly:</p>
+        <div class="cards grid-2">
+          <a class="card linkcard" target="_blank" rel="noreferrer" href="https://aws.amazon.com/about-aws/whats-new/2025/03/amazon-connect-contact-lens-semantic-contact-categorization/">
+            <h3>Semantic Contact Categorization (Mar 2025)</h3>
+            <p class="muted">Amazon Connect Contact Lens</p>
+          </a>
+
+          <a class="card linkcard" target="_blank" rel="noreferrer" href="https://aws.amazon.com/about-aws/whats-new/2023/05/amazon-connect-contact-lens-theme-detection/">
+            <h3>Theme Detection (May 2023)</h3>
+            <p class="muted">Amazon Connect Contact Lens</p>
+          </a>
+
+          <a class="card linkcard" target="_blank" rel="noreferrer" href="https://aws.amazon.com/about-aws/whats-new/2025/09/amazon-connect-contact-lens-redaction-7-languages/">
+            <h3>Redaction in 7 languages (Sep 2025)</h3>
+            <p class="muted">Amazon Connect Contact Lens</p>
+          </a>
+
+          <a class="card linkcard" target="_blank" rel="noreferrer" href="https://aws.amazon.com/about-aws/whats-new/2023/11/amazon-connect-contact-lens-ai-powered-summarization-preview/">
+            <h3>AI-powered Summarization Preview (Nov 2023)</h3>
+            <p class="muted">Amazon Connect Contact Lens</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="card">
+          <p class="muted">
+            Add your email/LinkedIn/GitHub here (I left them blank so you can paste what you want publicly).
+          </p>
+          <div class="contact-grid">
+            <div><strong>Email:</strong> <span class="muted">your.email@example.com</span></div>
+            <div><strong>LinkedIn:</strong> <span class="muted">linkedin.com/in/your-handle</span></div>
+            <div><strong>GitHub:</strong> <span class="muted">github.com/your-username</span></div>
+            <div><strong>Location:</strong> <span class="muted">Bay Area, CA (optional)</span></div>
+          </div>
+        </div>
+        <p class="footnote muted">Content summarized from your slide deck :contentReference[oaicite:1]{index=1}.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="muted">© <span id="year"></span> Siffi Singh</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
