@@ -76,7 +76,7 @@ li{ margin: 6px 0; }
   height: 86px !important;
   border-radius: 50% !important;
   object-fit: cover !important;
-  border: 3px solid rgba(215, 215, 215, 0.74) !important;
+  border: 3px solid #cbd5e1 !important;
   box-shadow: var(--shadow2);
   flex: 0 0 auto;
 }
